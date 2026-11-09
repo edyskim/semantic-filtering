@@ -1,0 +1,13 @@
+model,prompt,n,median_s
+claude-haiku-4-5-20251001,cot,4302,5.3845
+claude-haiku-4-5-20251001,few_shots,4566,5.1815
+claude-haiku-4-5-20251001,zero_shot,3722,3.649
+claude-sonnet-4-6,cot,3000,8.991
+claude-sonnet-4-6,few_shots,3000,9.7035
+claude-sonnet-4-6,zero_shot,3000,8.232
+gemini-2.5-flash,cot,3000,6.1805
+gemini-2.5-flash,few_shots,3000,6.177
+gemini-2.5-flash,zero_shot,3000,6.4785
+gpt-4o,cot,3000,2.706
+gpt-4o,few_shots,3000,7.6895
+gpt-4o,zero_shot,3000,1.949

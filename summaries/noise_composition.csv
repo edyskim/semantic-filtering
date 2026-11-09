@@ -1,0 +1,13 @@
+dataset,category,n,share
+plantdoc,normal,806,0.806
+plantdoc,rule1,93,0.093
+plantdoc,rule2,64,0.064
+plantdoc,rule4,18,0.018
+plantdoc,rule5,11,0.011
+plantdoc,rule3,8,0.008
+plantwild,normal,1103,0.5515
+plantwild,rule2,518,0.259
+plantwild,rule1,223,0.1115
+plantwild,rule3,90,0.045
+plantwild,rule4,37,0.0185
+plantwild,rule5,29,0.0145

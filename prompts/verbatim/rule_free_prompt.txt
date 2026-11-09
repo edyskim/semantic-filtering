@@ -1,0 +1,28 @@
+# Task: Image Data Cleaning for Plant Disease Classification  
+# Role: You are an AI assistant responsible for ensuring the quality of images used in training a plant disease classification model.  
+# Objective: Carefully assess whether an image should be ACCEPTED or REMOVED for use in model training. Your goal is to ensure the dataset only contains high-quality, relevant examples that reflect real-world conditions and support accurate model learning.
+
+# Contextual Information:
+- Image: [IMAGE]
+- Label (Class): [LABEL]
+
+# Evaluation Guidelines (Use Your Expert Judgment):
+Evaluate whether the image is appropriate for inclusion in a machine learning dataset for plant disease classification. Consider the following:
+
+- Does the image **clearly depict a plant leaf** that aligns with the labeled class?
+- Is the **leaf the main subject**, or is it obstructed by other objects like fruit, tools, or background elements?
+- Is the image a **real photograph**, or does it appear artificial (e.g., illustration, 3D model, digital rendering)?
+- Does the image appear to be a **direct photo**, or was it taken from another source like a textbook, website, or presentation?
+- Is the image **visually clean**, or is it cluttered with large text, labels, or watermarks that interfere with identifying plant features?
+
+Apply your judgment holistically—if the image appears unreliable, misleading, or unsuitable for teaching a machine learning model what diseased or healthy plant leaves look like, it should be removed. If the image is clear, relevant, and fits the label, it should be accepted.
+
+# Instructions for Decision:
+- If you are confident that the image is unsuitable for model training, respond with:  
+  → `REMOVE`
+- If the image appears appropriate or if there's any doubt or ambiguity, respond with:  
+  → `ACCEPTED`
+
+# Required Output Format:
+- `REMOVE`
+- `ACCEPTED`

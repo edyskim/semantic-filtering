@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="400" viewBox="0 0 1100 400" role="img" aria-labelledby="title desc">
+  <title id="title">Expert-guided semantic filtering workflow</title>
+  <desc id="desc">A left-to-right pipeline: datasets feed expert-defined semantic criteria and prompt templates, a vision-language model applies the criteria to produce keep or remove decisions with rule attribution, the decisions are released as sanitized metadata, and analysis scripts consume that metadata.</desc>
+  <defs>
+    <style>
+      .bg     { fill: #f6f8fa; }
+      .ink    { fill: #1f2d3d; }
+      .muted  { fill: #5b6b7b; }
+      .detail { fill: #43586b; }
+      .ttl    { font: 700 25px 'Segoe UI', Arial, sans-serif; }
+      .sub    { font: 400 15px 'Segoe UI', Arial, sans-serif; }
+      .name   { font: 700 16px 'Segoe UI', Arial, sans-serif; }
+      .small  { font: 400 13.5px 'Segoe UI', Arial, sans-serif; }
+      .badge  { font: 700 15px 'Segoe UI', Arial, sans-serif; fill: #ffffff; }
+      .group  { font: 700 12.5px 'Segoe UI', Arial, sans-serif; letter-spacing: .4px; fill: #5b6b7b; }
+      .barlbl { font: 700 17px 'Segoe UI', Arial, sans-serif; fill: #1f2d3d; }
+      .data   { fill: #eef3f8; stroke: #3b5b7f; stroke-width: 2; }
+      .human  { fill: #edf6f0; stroke: #3f7d56; stroke-width: 2; }
+      .vlm    { fill: #eef0fb; stroke: #4a5bb0; stroke-width: 2; }
+      .bar    { fill: #eef2f6; stroke: #c2cedb; stroke-width: 2; }
+      .brk    { fill: none; stroke: #9aa7b5; stroke-width: 1.6; }
+      .flow   { stroke: #7d93a8; stroke-width: 2.4; fill: none; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7d93a8" />
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="2.5" stdDeviation="3" flood-color="#9fb0c0" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <rect class="bg" width="1100" height="400" rx="0" />
+
+  <text x="550" y="44" text-anchor="middle" class="ttl ink">Semantic Filtering for Plant Disease Field Data</text>
+  <text x="550" y="72" text-anchor="middle" class="sub muted">Experts define semantic validity criteria; vision-language models apply them at dataset scale</text>
+
+  <!-- connecting arrows (drawn under cards) -->
+  <line x1="214" y1="180" x2="246" y2="180" class="flow" marker-end="url(#arrow)" />
+  <line x1="427" y1="180" x2="459" y2="180" class="flow" marker-end="url(#arrow)" />
+  <line x1="640" y1="180" x2="672" y2="180" class="flow" marker-end="url(#arrow)" />
+  <line x1="853" y1="180" x2="885" y2="180" class="flow" marker-end="url(#arrow)" />
+
+  <!-- Stage 1: Datasets -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="120" width="168" height="120" rx="12" class="data" />
+  </g>
+  <circle cx="124" cy="120" r="17" fill="#3b5b7f" />
+  <text x="124" y="125" text-anchor="middle" class="badge">1</text>
+  <text x="124" y="160" text-anchor="middle" class="name ink">Datasets</text>
+  <text x="124" y="190" text-anchor="middle" class="small detail">PlantDoc</text>
+  <text x="124" y="214" text-anchor="middle" class="small detail">PlantWild</text>
+
+  <!-- Stage 2: Expert Criteria -->
+  <g filter="url(#shadow)">
+    <rect x="253" y="120" width="168" height="120" rx="12" class="human" />
+  </g>
+  <circle cx="337" cy="120" r="17" fill="#3f7d56" />
+  <text x="337" y="125" text-anchor="middle" class="badge">2</text>
+  <text x="337" y="160" text-anchor="middle" class="name ink">Expert Criteria</text>
+  <text x="337" y="190" text-anchor="middle" class="small detail">Semantic rules</text>
+  <text x="337" y="214" text-anchor="middle" class="small detail">Reference labels</text>
+
+  <!-- Stage 3: Prompts -->
+  <g filter="url(#shadow)">
+    <rect x="466" y="120" width="168" height="120" rx="12" class="human" />
+  </g>
+  <circle cx="550" cy="120" r="17" fill="#3f7d56" />
+  <text x="550" y="125" text-anchor="middle" class="badge">3</text>
+  <text x="550" y="160" text-anchor="middle" class="name ink">Prompts</text>
+  <text x="550" y="190" text-anchor="middle" class="small detail">Zero-shot &#183; Few-shot</text>
+  <text x="550" y="214" text-anchor="middle" class="small detail">Chain-of-thought</text>
+
+  <!-- Stage 4: VLM Filtering -->
+  <g filter="url(#shadow)">
+    <rect x="679" y="120" width="168" height="120" rx="12" class="vlm" />
+  </g>
+  <circle cx="763" cy="120" r="17" fill="#4a5bb0" />
+  <text x="763" y="125" text-anchor="middle" class="badge">4</text>
+  <text x="763" y="160" text-anchor="middle" class="name ink">VLM Filtering</text>
+  <text x="763" y="190" text-anchor="middle" class="small detail">Keep / remove</text>
+  <text x="763" y="214" text-anchor="middle" class="small detail">Rule attribution</text>
+
+  <!-- Stage 5: Metadata -->
+  <g filter="url(#shadow)">
+    <rect x="892" y="120" width="168" height="120" rx="12" class="data" />
+  </g>
+  <circle cx="976" cy="120" r="17" fill="#3b5b7f" />
+  <text x="976" y="125" text-anchor="middle" class="badge">5</text>
+  <text x="976" y="160" text-anchor="middle" class="name ink">Public Metadata</text>
+  <text x="976" y="190" text-anchor="middle" class="small detail">Image IDs</text>
+  <text x="976" y="214" text-anchor="middle" class="small detail">Decisions &#183; rules</text>
+
+  <!-- grouping brackets -->
+  <path class="brk" d="M257,258 L257,250 L630,250 L630,258" />
+  <text x="443" y="274" text-anchor="middle" class="group">HUMAN-DEFINED</text>
+
+  <path class="brk" d="M683,258 L683,250 L843,250 L843,258" />
+  <text x="763" y="274" text-anchor="middle" class="group">AUTOMATED AT SCALE</text>
+
+  <!-- metadata feeds analysis -->
+  <line x1="976" y1="244" x2="976" y2="308" class="flow" marker-end="url(#arrow)" />
+
+  <!-- Analysis Scripts bar -->
+  <rect x="40" y="312" width="1020" height="64" rx="12" class="bar" />
+  <text x="550" y="339" text-anchor="middle" class="barlbl">Analysis Scripts</text>
+  <text x="550" y="361" text-anchor="middle" class="small detail">Filtering metrics &#183; Inter-annotator agreement &#183; Fixed-size diagnostics &#183; Downstream CNN evaluation</text>
+</svg>

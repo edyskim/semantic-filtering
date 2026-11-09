@@ -1,0 +1,21 @@
+dataset,test_set,test_image_id,pool_image_id,test_class,pool_class
+plantdoc,curated test,test-2_blueberry-leaf,65_blueberry-leaf,blueberry leaf,blueberry leaf
+plantdoc,curated test,test-9_tomato-septoria-leaf-spot,78_tomato-septoria-leaf-spot,tomato septoria leaf spot,tomato septoria leaf spot
+plantdoc,curated test,test-7_tomato-leaf-bacterial-spot,129_tomato-septoria-leaf-spot,tomato leaf bacterial spot,tomato septoria leaf spot
+plantdoc,uncurated test,test-2_blueberry-leaf,65_blueberry-leaf,blueberry leaf,blueberry leaf
+plantdoc,uncurated test,test-9_tomato-septoria-leaf-spot,78_tomato-septoria-leaf-spot,tomato septoria leaf spot,tomato septoria leaf spot
+plantdoc,uncurated test,test-7_tomato-leaf-bacterial-spot,129_tomato-septoria-leaf-spot,tomato leaf bacterial spot,tomato septoria leaf spot
+plantwild,curated test,test-apple rust-286,train-apple rust-98,apple leaf rust,apple leaf rust
+plantwild,curated test,test-citrus canker-305,train-citrus canker-307,citrus leaf canker,citrus leaf canker
+plantwild,curated test,test-tomato early blight-188,train-tomato late blight-207,tomato leaf early blight,tomato leaf late blight
+plantwild,curated test,test-tomato late blight-google_0200,train-tomato early blight-google_0322,tomato leaf late blight,tomato leaf early blight
+plantwild,curated test,test-tomato late blight-google_0056,train-tomato early blight-google_0372,tomato leaf late blight,tomato leaf early blight
+plantwild,uncurated test,test-apple rust-286,train-apple rust-98,apple leaf rust,apple leaf rust
+plantwild,uncurated test,test-citrus canker-306,train-citrus canker-308,citrus leaf canker,citrus leaf canker
+plantwild,uncurated test,test-citrus canker-305,train-citrus canker-307,citrus leaf canker,citrus leaf canker
+plantwild,uncurated test,test-grape downy mildew-102,train-grape downy mildew-216,grape leaf downy mildew,grape leaf downy mildew
+plantwild,uncurated test,test-tomato early blight-188,train-tomato late blight-207,tomato leaf early blight,tomato leaf late blight
+plantwild,uncurated test,test-tomato early blight-67 - Copy,train-tomato late blight-67 - Copy,tomato leaf early blight,tomato leaf late blight
+plantwild,uncurated test,test-tomato late blight-google_0200,train-tomato early blight-google_0322,tomato leaf late blight,tomato leaf early blight
+plantwild,uncurated test,test-tomato late blight-google_0056,train-tomato early blight-google_0372,tomato leaf late blight,tomato leaf early blight
+plantwild,uncurated test,test-tomato late blight-google_0268,train-tomato early blight-google_0021,tomato leaf late blight,tomato leaf early blight

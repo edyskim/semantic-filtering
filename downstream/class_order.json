@@ -1,0 +1,26 @@
+{
+ "plantdoc": [
+  "blueberry leaf",
+  "corn leaf blight",
+  "corn rust leaf",
+  "peach leaf",
+  "potato leaf early blight",
+  "raspberry leaf",
+  "squash powdery mildew leaf",
+  "tomato leaf bacterial spot",
+  "tomato leaf late blight",
+  "tomato septoria leaf spot"
+ ],
+ "plantwild": [
+  "apple leaf",
+  "apple leaf rust",
+  "basil leaf",
+  "citrus leaf canker",
+  "cucumber leaf",
+  "grape leaf downy mildew",
+  "maple leaf",
+  "squash leaf",
+  "tomato leaf early blight",
+  "tomato leaf late blight"
+ ]
+}
